@@ -15,7 +15,7 @@ public class Main {
 			response.header("Access-Control-Allow-Methods", "*");
 			return "OK";
 		});
-		Spark.before((request, response) -> response.header("Access-Control-Allow-Origin", "*"));
+		before((request, response) -> response.header("Access-Control-Allow-Origin", "*"));
 		
 		JsonTransformer jsonTransformer = new JsonTransformer();
 		
@@ -41,4 +41,5 @@ public class Main {
 	}
 
 }
+
 
