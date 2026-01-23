@@ -44,7 +44,7 @@ public class PedidoServices {
 			return pedido;
 		} else {
 			response.status(404);
-			return "Error mostrando producto";
+			return "Error mostrando pedido";
 		}
 	}
 	
@@ -90,3 +90,4 @@ public class PedidoServices {
 	}
 
 }
+
